@@ -11,4 +11,13 @@ def second_page(request):
     return HttpResponse("Hello, world! Nama saya Annis")
 
 def example(request):
-    return render(request, 'example.html')
+    return render(request, 'example.html')  
+    
+def shop(request):
+    return render(request, 'shop.html')
+
+def firstpage(request):
+    return render(request, 'firstpage.html')
+
+def secondpage(request):
+    return render(request, 'secondpage.html')
