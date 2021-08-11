@@ -21,3 +21,6 @@ def firstpage(request):
 
 def secondpage(request):
     return render(request, 'secondpage.html')
+
+def me(request):
+    return render(request, 'me.html')
