@@ -31,12 +31,10 @@ def shop_laptop(request):
     return render(request, 'shop_laptop.html')
 
 def shop_list(request):
-    return render(request, 'shop_list.html')
-
-def shop_list(request):
-   try:
+    #try:
         category_laptop = Category.objects.get(pk=1)
         product_laptop = Product.objects.filter(category=category_laptop)
-        return render(request, 'shop_laptop_list.html', {'product_list': product_laptop})
-   except:
-       return HttpResponse("Terjadi Error")
+        return render(request, 'shop_list.html', {'product_list': product_laptop})   
+    #except:
+    #   return HttpResponse("Terjadi Error")
+    
